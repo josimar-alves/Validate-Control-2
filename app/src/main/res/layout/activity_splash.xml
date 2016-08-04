@@ -10,8 +10,8 @@
     tools:context="com.example.jr.validatecontrol.SplashActivity">
 
     <ImageView
-        android:layout_width="200px"
-        android:layout_height="200px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/splash"
         android:src="@drawable/splash"
         android:layout_centerVertical="true"

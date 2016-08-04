@@ -19,9 +19,17 @@ android {
     }
 }
 
+repositories {
+    jcenter()
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.2.0'
     compile 'com.android.support:design:23.2.0'
+    compile 'com.beardedhen:androidbootstrap:2.2.0'
+    compile 'com.github.fengdai:alertdialogpro-theme-material:0.2.6'
+    compile 'com.borax12.materialdaterangepicker:library:1.6'
+    compile 'com.wdullaer:materialdatetimepicker:2.3.0'
 }

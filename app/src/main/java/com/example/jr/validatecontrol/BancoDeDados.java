@@ -10,7 +10,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class BancoDeDados extends SQLiteOpenHelper {
 
     private static String itensTabela = "CREATE TABLE produto (" +
-            "id INTEGER PRIMARY KEY AUTOINCREMENT, nome TEXT, descricao TEXT, validade TEXT)";
+            "id INTEGER PRIMARY KEY AUTOINCREMENT, nome TEXT, dia INTEGER, mes INTEGER, ano INTEGER)";
 
     public BancoDeDados(Context context) {
         super(context, "validateControl", null, 1);

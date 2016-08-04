@@ -5,15 +5,16 @@ package com.example.jr.validatecontrol;
  */
 public class Produto {
     private String nome;
-    private String data;
-    private String descricao;
+    private int dia;
+    private int mes;
+    private int ano;
 
-    public Produto(String nome, String descricao, String data) {
+    public Produto(String nome, int dia, int mes, int ano) {
         this.nome = nome;
-        this.data = data;
-        this.descricao = descricao;
+        this.dia = dia;
+        this.mes = mes;
+        this.ano = ano;
     }
-
 
     public String getNome() {
         return nome;
@@ -23,23 +24,35 @@ public class Produto {
         this.nome = nome;
     }
 
+    public int getDia() {
+        return dia;
+    }
+
+    public void setDia(int dia) {
+        this.dia = dia;
+    }
+
+    public int getMes() {
+        return mes;
+    }
+
+    public void setMes(int mes) {
+        this.mes = mes;
+    }
+
+    public int getAno() {
+        return ano;
+    }
+
+    public void setAno(int ano) {
+        this.ano = ano;
+    }
+
     public String getData() {
-        return data.toString();
-    }
-
-    public void setData(String data) {
-        this.data = data;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+        return this.dia + "/" + (this.mes+1) + "/" + this.ano;
     }
 
     public String toString() {
-        return "Produto: " + this.nome + " | Descrição: " + this.descricao + "| Data: " + this.data;
+        return "Produto: " + this.nome + " | Data: " + this.dia + "/" + (this.mes+1) + "/" + this.ano;
     }
 }

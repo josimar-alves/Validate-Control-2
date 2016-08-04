@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 
 public class SplashActivity extends AppCompatActivity implements Runnable {
-    private static final int DELAY = 500;
+    private static final int DELAY = 3500;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,7 @@ public class SplashActivity extends AppCompatActivity implements Runnable {
         handler.postDelayed(this, DELAY);
         ImageView img = (ImageView) findViewById(R.id.splash);
         ObjectAnimator obj = ObjectAnimator.ofFloat(img, "alpha", 0f, 1f);
-        obj.setDuration(500);
+        obj.setDuration(3000);
         obj.start();
     }
 
